@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    
+    
+    <head>
+        
+        
+        
+        <title>Play Craps Online | Craps (Game)</title>
+        
+        
+        
+        <!-- Meta -->
+        
+        <meta name="description" content="The Craps game, built as the part of Assignment #2 by Vimal Atreya Ramaka" />
+        
+        <meta name="keywords" content="craps game, IT 205, UPEI, web development course, information technology, it courses at upei, upei csit, vimal" />
+        
+        
+        
+        <!-- External CSS -->
+        
+        <link href="res/css/style.css" rel="stylesheet" type="text/css">
+        <!--[if gte IE 9]>
+  			<style type="text/css">
+    			.gradient {
+       				filter: none;
+    			}
+  			</style>
+		<![endif]-->
+        
+        
+        
+        <!-- Insert the external scripts -->
+        
+        <script src="res/js/game.js"></script>
+        
+        <script src="res/js/misc.js"></script>
+        
+        
+        
+    </head>
+    
+    
+    
+    <body>
+        
+        
+        
+        <div id="main">
+            
+            
+            
+            <!-- Header -->
+            
+            
+            
+            <header class="choice-header">
+                
+                
+                
+                <h1 class="icon-label">Craps (Game) &nbsp;&rsaquo;&nbsp; Play &nbsp;&rsaquo;&nbsp; <span id="notice">So, roll the dice to start playing!</span>
+                    
+                </h1>
+                
+            </header>
+            
+            
+            
+            <img id="divider-top" src="res/i/dividertop.png">
+            
+            
+            
+            <!-- Play Now-->
+            
+            
+            
+            <div class="choice-panel">
+                
+                
+                
+                <!-- Game -->
+                
+                
+                
+                <div id="description">
+                    
+                    
+                    
+                    <label for="hDie1">Die 1&nbsp;&rsaquo;&nbsp;</label><span id="hDie1"><img src="res/i/blank.png" align="middle" /></span>
+                    
+                    <label for="hDie2" style="margin-left:70px;">Die 2&nbsp;&rsaquo;&nbsp;</label><span id="hDie2"><img src="res/i/blank.png" align="middle" /></span>
+                    
+                    <label for="hSum" style="margin-left:70px;">Sum&nbsp;&rsaquo;&nbsp;
+                        
+                        <input id="hSum" type = "text" style="border:none;" size="12" disabled="disabled" />
+                        
+                        
+                        
+                        <strong><span id="showPoint" style="color:black;"></span></strong> 
+                        
+                        <input id="hPoint" type = "text" size="4" style="border:none;" disabled="disabled" />
+                        
+                        
+                        
+                        <br /><br />
+                        
+                        
+                        
+                    </div>
+                        
+                        
+                        
+                        <div class="centered-button">
+                            
+                            <button id="replay" style="visibility:hidden;" class="big-button" type="button" onClick="playAgain()">Play Again?</button>
+                            
+                            <br /><button id="rollButton" class="big-button" type="button" onClick="crap()">Roll the Dice!</button><br />
+                            
+                            <span id="rollCounter">++<span id="hRollCount"/>0</span></span>
+                            
+                        </div> 
+                        
+                        
+                        
+                    </div>                        
+                        
+                        
+                        
+                        <!-- Rules -->
+                        
+                        <img id="divider-bottom" src="res/i/dividerbottom.png">
+                        
+                        <strong>Rules:</strong><br /><br />
+                        
+                        <div class="description"><span><strong>Win &nbsp;&nbsp;&nbsp;&rsaquo;&nbsp; </strong> 7 or 11 on the first roll or continue to roll until the point is reached.</span><br />
+                            
+                            <span><strong>Lose &nbsp;&nbsp;&rsaquo;&nbsp; </strong> 2, 3 or 12 on the first throw. Or by rolling a 7 before making the point.</span><br />
+                            
+                            <span><strong>Point &nbsp;&rsaquo;&nbsp; </strong> 4, 5, 6, 8, 9 or 10 on first throw.</span>
+                            
+                        </div>
+                        
+                        
+                        
+                        <!-- Footer -->
+                        
+                        <img id="divider-bottom" src="res/i/dividerbottom.png">
+                        
+                        <footer id="footer-text">
+                            
+                            
+                            
+                            <span><a href="index.html">&#x3C; Startover</a> | Built by Vimal Atreya Ramaka for Assignment #2 of IT 205 at <a href="http://upei.ca" target="_blank">UPEI</a> | Version: 0.1.1</span>
+                            
+                        </footer>
+                        
+                        
+                        
+                    </div>
+                        
+                    </body>
+                        
+                        
+                        
+                    </html>
